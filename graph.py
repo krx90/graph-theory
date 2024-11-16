@@ -23,9 +23,11 @@ existiertKante('A', 'B')
 
 
 def getAlleNachbarn(knoten):
+    ergebnis = ''
     for i in range(len(adjazenzmatrix[knotenliste.index(knoten)])):
         if adjazenzmatrix[knotenliste.index(knoten)][i] > 0:
-            print(knotenliste[i])
+            ergebnis = ergebnis + knotenliste[i] + ' ' 
+    print('Nachbarn: ' + ergebnis)        
 
 
 getAlleNachbarn('B')
