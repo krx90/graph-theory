@@ -11,6 +11,7 @@ def existiertKnoten(name):
 
 existiertKnoten('A')
 
+
 def existiertKante(Startknoten, Endknoten):
     if adjazenzmatrix[knotenliste.index(Startknoten)][knotenliste.index(Endknoten)] == 1:
         print("True")
