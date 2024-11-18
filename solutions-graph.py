@@ -56,7 +56,7 @@ class Graph(object):
            not self.existiertKante(nameStartKnoten, nameZielKnoten):
             refStartKnoten = self.getRefKnoten(nameStartKnoten)
             refZielKnoten = self.getRefKnoten(nameZielKnoten)
-            if refStartKnoten != None and refZielKnoten != None:     
+            if refStartKnoten != None and refZielKnoten != None:
                 neueKante = Kante(refStartKnoten, refZielKnoten)
                 refStartKnoten.addNachbar(neueKante)
 
